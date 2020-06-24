@@ -11,35 +11,35 @@ The repository includes:
  * [notebooks/PartialFlows.ipynb](PartialFlows) - partial vs. location-scale  flows
 
 2. [mdnf](mdnf) - main files implementing flows, mixtures, inference etc.:
- * [one_hot.py]() - Operations on one-hot encoded vectors. 
- * [flows_mixture.py]() - Mixture of discrete normalizing flows. 
- * [inference.py]() - Variational inference algorithms for discrete normalizing flows. 
+ * [mdnf/one_hot.py]() - Operations on one-hot encoded vectors. 
+ * [mdnf/flows_mixture.py]() - Mixture of discrete normalizing flows. 
+ * [mdnf/inference.py]() - Variational inference algorithms for discrete normalizing flows. 
   
  * Base distributions:
-   * [base_mixtures.py]() - Base for mixture of categorical distributions. 
-   * [base_categorical.py]() - Factorized categorical distribution. 
-   * [base_constructors.py]() - Creating base mixtures of categorical distributions. 
+   * [mdnf/base_mixtures.py]() - Base for mixture of categorical distributions. 
+   * [mdnf/base_categorical.py]() - Factorized categorical distribution. 
+   * [mdnf/base_constructors.py]() - Creating base mixtures of categorical distributions. 
    
  * Individual discrete flows:
-   * [flows_transformations.py]() - Networks calculating transformations for discrete flows. 
-   * [flows.py]() - Basic flows.
-   * [flows_factorized.py]() - Discrete flows for factorized distributions.  
-   * [flows_edward2_made.py]() - Masked autoencoders.  
-   * [flows_edward2.py]() - Discrete autoregressive flows.
+   * [mdnf/flows_transformations.py]() - Networks calculating transformations for discrete flows. 
+   * [mdnf/flows.py]() - Basic flows.
+   * [mdnf/flows_factorized.py]() - Discrete flows for factorized distributions.  
+   * [mdnf/flows_edward2_made.py]() - Masked autoencoders.  
+   * [mdnf/flows_edward2.py]() - Discrete autoregressive flows.
 
  * Models:
-   * [bayesian_networks.py]() - Evaluation of joint probability of x and y for arbitrary Bayesian networks. 
-   * [gmvi.py]() - Variational Gaussian Mixture using Discrete Normalizing Flows. 
+   * [mdnf/bayesian_networks.py]() - Evaluation of joint probability of x and y for arbitrary Bayesian networks. 
+   * [mdnf/gmvi.py]() - Variational Gaussian Mixture using Discrete Normalizing Flows. 
  
  * Auxiliary:
-   * [prob_recovery.py]() - Recovering probability tables from samples or flows. 
-   * [aux.py]() - General auxiliary functions. 
-   * [time_profiling.py]() - Auxiliary functions for measuring time. 
+   * [mdnf/prob_recovery.py]() - Recovering probability tables from samples or flows. 
+   * [mdnf/aux.py]() - General auxiliary functions. 
+   * [mdnf/time_profiling.py]() - Auxiliary functions for measuring time. 
 
  * Unit tests:
-   * [one_hot_test.py]() 
-   * [flows_test.py]() 
-   * [flows_mixture_test.py]() 
+   * [mdnf/one_hot_test.py]() 
+   * [mdnf/flows_test.py]() 
+   * [mdnf/flows_mixture_test.py]() 
 
 
 ## Specification of dependencies
