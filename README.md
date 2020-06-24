@@ -5,41 +5,41 @@
 The repository includes:
 
 1. [notebooks](notebooks) - Jupyter notebooks illustrating use of MDNF with various models:
- * [notebooks/GaussianMixture.ipynb](GaussianMixture) - GMM with MDNF
- * [notebooks/BayesianNetwork.ipynb](BayesianNetwork) - BN with MDNF
- * [notebooks/VAEFlows.ipynb](VAEFlows) - VAE with MDNF
- * [notebooks/PartialFlows.ipynb](PartialFlows) - partial vs. location-scale  flows
+ * [GaussianMixture](notebooks/GaussianMixture.ipynb) - GMM with MDNF
+ * [BayesianNetwork](notebooks/BayesianNetwork.ipynb) - BN with MDNF
+ * [VAEFlows](notebooks/VAEFlows.ipynb) - VAE with MDNF
+ * [PartialFlows](notebooks/PartialFlows.ipynb) - partial vs. location-scale  flows
 
 2. [mdnf](mdnf) - main files implementing flows, mixtures, inference etc.:
- * [mdnf/one_hot.py]() - Operations on one-hot encoded vectors. 
- * [mdnf/flows_mixture.py]() - Mixture of discrete normalizing flows. 
- * [mdnf/inference.py]() - Variational inference algorithms for discrete normalizing flows. 
+ * [one_hot.py](mdnf/one_hot.py) - Operations on one-hot encoded vectors. 
+ * [flows_mixture.py](mdnf/flows_mixture.py) - Mixture of discrete normalizing flows. 
+ * [inference.py](mdnf/inference.py) - Variational inference algorithms for discrete normalizing flows. 
   
  * Base distributions:
-   * [mdnf/base_mixtures.py]() - Base for mixture of categorical distributions. 
-   * [mdnf/base_categorical.py]() - Factorized categorical distribution. 
-   * [mdnf/base_constructors.py]() - Creating base mixtures of categorical distributions. 
+   * [base_mixtures.py](mdnf/base_mixtures.py) - Base for mixture of categorical distributions. 
+   * [base_categorical.py](mdnf/base_categorical.py) - Factorized categorical distribution. 
+   * [base_constructors.py](mdnf/base_constructors.py) - Creating base mixtures of categorical distributions. 
    
  * Individual discrete flows:
-   * [mdnf/flows_transformations.py]() - Networks calculating transformations for discrete flows. 
-   * [mdnf/flows.py]() - Basic flows.
-   * [mdnf/flows_factorized.py]() - Discrete flows for factorized distributions.  
-   * [mdnf/flows_edward2_made.py]() - Masked autoencoders.  
-   * [mdnf/flows_edward2.py]() - Discrete autoregressive flows.
+   * [flows_transformations.py](mdnf/flows_transformations.py) - Networks calculating transformations for discrete flows. 
+   * [flows.py](mdnf/flows.py) - Basic flows.
+   * [flows_factorized.py](mdnf/flows_factorized.py) - Discrete flows for factorized distributions.  
+   * [flows_edward2_made.py](mdnf/flows_edward2_made.py) - Masked autoencoders.  
+   * [flows_edward2.py](mdnf/flows_edward2.py) - Discrete autoregressive flows.
 
  * Models:
-   * [mdnf/bayesian_networks.py]() - Evaluation of joint probability of x and y for arbitrary Bayesian networks. 
-   * [mdnf/gmvi.py]() - Variational Gaussian Mixture using Discrete Normalizing Flows. 
+   * [bayesian_networks.py](mdnf/bayesian_networks.py) - Evaluation of joint probability of x and y for arbitrary Bayesian networks. 
+   * [gmvi.py](mdnf/gmvi.py) - Variational Gaussian Mixture using Discrete Normalizing Flows. 
  
  * Auxiliary:
-   * [mdnf/prob_recovery.py]() - Recovering probability tables from samples or flows. 
-   * [mdnf/aux.py]() - General auxiliary functions. 
-   * [mdnf/time_profiling.py]() - Auxiliary functions for measuring time. 
+   * [prob_recovery.py](mdnf/prob_recovery.py) - Recovering probability tables from samples or flows. 
+   * [aux.py](mdnf/aux.py) - General auxiliary functions. 
+   * [time_profiling.py](mdnf/time_profiling.py) - Auxiliary functions for measuring time. 
 
  * Unit tests:
-   * [mdnf/one_hot_test.py]() 
-   * [mdnf/flows_test.py]() 
-   * [mdnf/flows_mixture_test.py]() 
+   * [one_hot_test.py](mdnf/one_hot_test.py) 
+   * [flows_test.py](mdnf/flows_test.py) 
+   * [flows_mixture_test.py](mdnf/flows_mixture_test.py) 
 
 
 ## Specification of dependencies
